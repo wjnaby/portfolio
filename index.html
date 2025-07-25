@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wan Fatin Nabilah Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script defer src="portfolio.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body class="dark-theme">
+
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- Star Background -->
+<div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+
+ <header>
+    <div class="navbar">
+      <div class="logo" onclick="goToWelcomePage()">JW<span>.</span></div>
+      <div class="nav-group">
+        <nav>
+          <a href="#intro">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="follow-btn" onclick="toggleTheme()">Toggle Theme</button>
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="intro slide-in">
+      <div class="text fade-in">
+        <p>Hello, my name is</p>
+        <h1>Wan Fatin <span>Nabilah</span></h1>
+        <h3>I’m a <span class="typewriter">Computer Science Student</span></h3>
+        <p class="bio ml14 fade-in">
+          <span class="text-wrapper">
+            <span class="letters">
+              I’m a Computer Science student at UiTM with a strong interest in web development. I’m currently looking for an internship where I can apply my coding skills, learn from experienced developers, and contribute to building impactful websites.
+            </span>
+          </span>
+        </p>
+        <div class="social-icons fade-in">
+          <ul>
+            <li><a href="https://www.facebook.com/share/1AUkT3wN9W/"><i class="fab fa-facebook-f icon"></i></a></li>
+            <li><a href="https://www.instagram.com/wjnaby.97?igsh=aXp6dGpwNzJ6d3Uy"><i class="fab fa-instagram icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/wan-fatin-nabilah-bt-wan-muhd-puad-ab5b68246"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li><a href="https://www.tiktok.com/@wjn_97?_t=ZS-8w30EIugQ4n&_r=1"><i class="fab fa-tiktok icon"></i></a></li>
+          </ul>
+        </div>
+        <a href="Wan Fatin Nabilah_resume.pdf" class="btn-cv fade-in" target="_blank">Download CV</a>
+      </div>
+      <div class="image zoom-in">
+        <div class="bg-shape"></div>
+        <img src="pic2.jpg" alt="Wan Fatin Nabilah" />
+      </div>
+    </section>
+    
+    <!-- About Me Section -->
+<section id="about">
+  <div class="about-container">
+    <h2 class="section-titleA">About Me</h2>
+    <div class="about-box">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at Universiti Teknologi MARA (UiTM) with a strong passion for web development and software engineering. I enjoy turning ideas into reality through clean, efficient, and user-friendly code. With a solid foundation in HTML, CSS, JavaScript, and backend technologies like PHP and MySQL, I am eager to expand my skills by working on real-world projects and learning from industry professionals.
+        Throughout my academic journey, I have been actively involved in developing web-based applications, working both independently and in teams. I enjoy problem-solving and am always open to new challenges that push me to grow as a developer. I take pride in writing code that not only works but is maintainable and scalable.
+        I am currently seeking an internship opportunity where I can apply my technical skills, gain hands-on experience, and contribute to impactful digital solutions. I am excited to collaborate with experienced developers, explore new technologies, and continue building meaningful and innovative web applications that make a difference.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <div class="about-container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-box">
+      <h2>Education</h2>
+      <div class="timeline-container">
+        <div class="timeline-item" >
+          <div class="timeline-dot"></div>
+          <div class="timeline-info">
+            <div class="timeline-date">2022 – Present</div>
+            <div class="timeline-content">
+              <h3>Bachelor of Computer Science (Hons.)</h3>
+              <p>Universiti Teknologi MARA (UiTM), Shah Alam</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" >
+          <div class="timeline-dot"></div>
+          <div class="timeline-info">
+            <div class="timeline-date">2019 – 2022</div>
+            <div class="timeline-content">
+              <h3>Diploma in Computer Science</h3>
+              <p>Universiti Teknologi MARA (UiTM), Segamat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+    <section class="projects" id="projects">
+  <div class="section-title fade-up">
+    <h1>
+      <span class="highlight-blue">My</span>
+      <span class="highlight-teal">Pro</span>
+      <span class="highlight-purple">jects</span>
+    </h1>
+  </div>
+
+  <div class="cards-container">
+    <div class="card orange fade-up">
+      <img src="portfolio.jpg" alt="Card 1">
+      <h3>Website Portfolio</h3>
+      <p>A personal website that showcases your skills, projects, experience, and achievements—especially 
+        useful for students, and professionals in creative or tech fields like web development, design, or writing.</p>
+    </div>
+
+    <div class="card blue fade-up">
+      <img src="cafe.jpg" alt="Card 2">
+      <h3>Web Recommendation System</h3>
+      <p>A web application that helps students around UiTM Shah Alam find the best cafes based on their preferences.</p>
+    </div>
+
+    <div class="card red fade-up">
+      <img src="rsa.jpg" alt="Card 3">
+      <h3>RSA Encryption Game</h3>
+      <p>An interactive game that helps users understand RSA encryption through key generation, encryption, and decryption challenges.</p>
+    </div>
+
+    <div class="card red fade-up">
+      <img src="one.jpg" alt="Card 4">
+      <h3>ONE TIME PAD CIPHER PROJECT</h3>
+      <p>The One-Time Pad Cipher ensures perfect secrecy using random keys but faces practical challenges in modern encryption.</p>
+    </div>
+
+    <div class="card red fade-up">
+      <img src="tic.jpg" alt="Card 5">
+      <h3>Tic-Tac-Toe with AI</h3>
+      <p>A classic Tic-Tac-Toe game where the player competes against an AI using basic game logic or minimax algorithm.</p>
+    </div>
+
+    <div class="card red fade-up">
+      <img src="website.jpg" alt="Card 6">
+      <h3>Website with Login</h3>
+      <p>A basic website that allows users to register, log in, and access protected content using authentication.</p>
+    </div>
+  </div>
+</section>
+
+      
+      <div class="skills-section" id="skills">
+        <h2 class="skills-title">Skills</h2>
+        <h3 class="tech-stack-title">Tech Stack</h3>
+        <div class="skills-grid">
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS">
+                <span>ReactJS</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+                <span>PHP</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++">
+                <span>C++</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                <span>HTML</span>
+                <div class="tooltip">Advanced</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                <span>CSS</span>
+                <div class="tooltip">Advanced</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <span>JavaScript</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                <span>Java</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                <span>Python</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel">
+                <span>Laravel</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+    
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL">
+                <span>MySQL</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+        </div>
+    
+        <h3 class="tech-stack-title">Tools</h3>
+        <div class="skills-grid">
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/vs.png" alt="VS Studio">
+                <span>VS Studio</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/dreamweaver.jpeg" alt="Dreamweaver">
+                <span>Dreamweaver</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop">
+                <span>Photoshop</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/codeblock.jpeg" alt="CodeBlocks">
+                <span>Code::Blocks</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/xammp.jpeg" alt="XAMPP">
+                <span>XAMPP</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/oracle.png" alt="Oracle">
+                <span>Oracle</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/file.png" alt="FileZilla">
+                <span>FileZilla</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/bluej.png" alt="BlueJ">
+                <span>BlueJ</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+            <div class="skill-button fade-up">
+                <img src="C:/Users/WJNABY/Desktop/xamp/htdocs/portfolio/tools logo/star.jpeg" alt="StarUML">
+                <span>StarUML</span>
+                <div class="tooltip">Intermediate</div>
+            </div>
+        </div>
+    </div>
+    
+            
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wan Fatin Nabilah Bt Wan Muhd Puad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
